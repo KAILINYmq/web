@@ -1,0 +1,11 @@
+mac 2.3GHz 双核 i5 内存8G
+(base) mac@MacdeMacBook-Pro web % wrk -d 60s -c 1024 -t 3 http://localhost:9999/
+Running 1m test @ http://localhost:9999/
+  3 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.84ms   15.08ms 299.73ms   88.59%
+    Req/Sec    18.76k     5.67k   41.20k    72.58%
+  3321980 requests in 1.00m, 354.83MB read
+  Socket errors: connect 0, read 3552, write 4, timeout 0
+Requests/sec:  55297.93
+Transfer/sec:      5.91MB
